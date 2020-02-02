@@ -1,0 +1,23 @@
+{
+  "name": "Ogame Marketplace+",
+  "short_name": "OMK+",
+  "version": "0.0.1",
+  "description": "Enhances the UI for the new Ogame MCO marketplace",
+  "manifest_version": 2,
+  "permissions": [
+    "unlimitedStorage",
+    "storage",
+    "http://*.ogame.gameforge.com/*",
+    "https://*.ogame.gameforge.com/*"
+  ],
+  "web_accessible_resources": ["js/*.js"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.ogame.gameforge.com/game/index.php*"],
+      "js": ["./js/marketplace.js"],
+      "css": ["./css/ogame-marketplace-plus.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "minimum_chrome_version": "32"
+}

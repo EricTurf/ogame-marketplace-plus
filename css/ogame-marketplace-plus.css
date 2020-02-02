@@ -1,0 +1,13 @@
+.marketplace header .tabs {
+  flex-wrap: wrap;
+  justify-content: flex-start !important;
+  height: auto !important;
+}
+
+.marketplace header .tabs li {
+  margin-top: 8px;
+}
+
+.marketplace header .tabs li a {
+  color: #fff;
+}
